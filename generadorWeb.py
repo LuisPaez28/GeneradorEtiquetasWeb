@@ -28,7 +28,7 @@ def generar_pdf(texto):
     # 2. Dibujar en el PDF
     # Colocar el texto arriba
     c.setFont("Helvetica-Bold", 14)
-    c.drawCentredString(ancho / 2, alto - 0.5 * inch, f"Producto: {texto}")
+    # c.drawCentredString(ancho / 2, alto - 0.5 * inch, f"Producto: {texto}")
     
     # Colocar la imagen del código de barras
     # drawImage(path, x, y, width, height)
