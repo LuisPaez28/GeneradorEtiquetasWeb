@@ -30,7 +30,7 @@ def generar_pdf(texto):
     # Definimos alturas para mantener el codigo limpio
     altura_barcode = 1.5 * inch
     posicion_y_barcode = 1.1 * inch  # Subimos el barcode (antes estaba en 0.5)
-    posicion_y_texto = 0.4 * inch    # Posicionamos el texto abajo
+    posicion_y_texto = 0.7 * inch    # Posicionamos el texto abajo
     
     # 2. Dibujar el código de barras (Subido)
     # drawImage(path, x, y, width, height)
