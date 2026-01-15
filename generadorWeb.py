@@ -59,7 +59,7 @@ st.set_page_config(page_title="Generador de Etiquetas", page_icon="🏷️")
 st.title("🏷️ Generador de Etiquetas 4x3")
 
 with st.container():
-    texto_input = st.text_input("Introduce el texto o código:", placeholder="Ej. LUIS-12345")
+    texto_input = st.text_input("Introduce el texto o código:", placeholder="Ej. MSC-POLYLC-MCOC-MD-NB")
     boton_generar = st.button("Generar Etiqueta")
 
 if boton_generar:

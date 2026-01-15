@@ -50,9 +50,9 @@ def generar_pdf_masivo(lista_datos):
 
 # --- INTERFAZ DE STREAMLIT ---
 st.set_page_config(page_title="Bulk Label Pro", layout="centered")
-st.title("🚀 Generador Masivo de Etiquetas")
+st.title("Generador Masivo de Etiquetas")
 
-tab1, tab2 = st.tabs(["📝 Pegar Lista", "📁 Cargar Archivo"])
+tab1, tab2 = st.tabs(["Pegar Lista", "📄 Cargar Archivo"])
 lista_final = []
 
 with tab1:
