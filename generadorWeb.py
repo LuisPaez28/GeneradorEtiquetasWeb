@@ -38,7 +38,7 @@ def generar_pdf(texto):
     c.drawImage(path_imagen, 0.5 * inch, posicion_y_barcode, width=3 * inch, height=altura_barcode)
     
     # 3. Dibujar el texto (Centrado abajo con espacio)
-    c.setFont("Courier-Bold", 18) # Usé Courier para que parezca más "código"
+    c.setFont("Times New Roman", 18) # Usé Times New Roman para que parezca más "código de barras"
     # drawCentredString(x_centro, y_base, texto)
     c.drawCentredString(ancho / 2, posicion_y_texto, texto)
     
