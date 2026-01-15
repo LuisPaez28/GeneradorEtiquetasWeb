@@ -7,6 +7,7 @@ from reportlab.lib.pagesizes import inch
 from io import BytesIO
 import tempfile
 import os
+from datetime import datetime
 
 def crear_etiqueta_en_pagina(c, texto, ancho, alto):
     """Dibuja una etiqueta en la página actual del canvas."""
@@ -78,11 +79,15 @@ with tab2:
 if lista_final:
     st.divider()
     if st.button(f"Generar {len(lista_final)} Etiquetas"):
+        #Fecha actual para el nombre del archivo
+        fecha_string = datetime.now().strftime("%d%m%Y_%H%M%S")
+        #Nombre del archivo
+        nombre_archivo = f"lote_etiquetas_{fecha_string}.pdf"
         with st.spinner('Procesando lote...'):
             pdf_resultado = generar_pdf_masivo(lista_final)
             st.download_button(
                 label="📥 Descargar PDF para Impresión",
                 data=pdf_resultado,
-                file_name="lote_etiquetas.pdf",
+                file_name=nombre_archivo,
                 mime="application/pdf"
             )
